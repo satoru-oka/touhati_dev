@@ -260,7 +260,7 @@
       <div class="footerContents">
         <div class="footerContents-contact">
           <div class="enterprise-logo">
-            <img src="./assets/images/svg/logo-footer.svg" alt="PACIFIC MALL DEVELOPMENT" />
+            <img src="<?= get_template_directory_uri(); ?>/assets/images/svg/logo-footer.svg" alt="PACIFIC MALL DEVELOPMENT" />
           </div>
           <div class="enterprise-detail">
             <p class="name">パシフィックモール開発株式会社</p>
