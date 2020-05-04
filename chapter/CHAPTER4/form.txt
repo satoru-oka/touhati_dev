@@ -1,0 +1,155 @@
+■フォームのHTML
+
+<div id="pg-contact">
+  <p class="lead">
+    当社へのお問い合わせは、以下のフォームへのご入力をお願いいたします。<br />
+    フォームに<strong>必要事項をすべて入力</strong>した後、<a href="/privacy-policy">個人情報保護方針</a>に同意の上、 <br />
+    送信ボタンを押してください。
+  </p>
+  <div class="form-inner">
+    <div class="contact-form">
+      <div class="input-box">
+        <label class="label-area">お名前</label>
+        <div class="input-area">
+          <input type="text" name="" />
+        </div>
+      </div>
+      <div class="input-box">
+        <label class="label-area">フリガナ</label>
+        <div class="input-area">
+          <input type="text" name="" />
+        </div>
+      </div>
+      <div class="input-box">
+        <label class="label-area">メールアドレス</label>
+        <div class="input-area">
+          <input type="email" name="" />
+        </div>
+      </div>
+      <div class="input-box">
+        <label class="label-area">お問い合わせ内容</label>
+        <div class="input-area">
+          <textarea name=""></textarea>
+        </div>
+      </div>
+      <div class="action-box">
+        <input type="submit" value="上記内容で送信する" />
+      </div>
+    </div>
+    <div class="note">
+      <small>
+        お問い合わせの内容によっては、返信にお時間をいただく場合や、<br />
+        お答えできないことがございますことを予めご了承ください。 
+      </small>
+    </div>
+  </div>
+</div>
+
+
+■フォームのHTML（「Contact Form 7」のコードを含む）
+
+<div id="pg-contact">
+  <p class="lead">
+    当社へのお問い合わせは、以下のフォームへのご入力をお願いいたします。<br />
+    フォームに<strong>必要事項をすべて入力</strong>した後、<a href="/privacy-policy">個人情報保護方針</a>に同意の上、<br />
+    送信ボタンを押してください。
+  </p>
+  <div class="form-inner">
+    <div class="contact-form">
+      <div class="input-box">
+        <label class="label-area">お名前</label>
+        <div class="input-area">
+          [text* your_name]
+        </div>
+      </div>
+      <div class="input-box">
+        <label class="label-area">フリガナ</label>
+        <div class="input-area">
+          [text* your_kana]
+        </div>
+      </div>
+      <div class="input-box">
+        <label class="label-area">メールアドレス</label>
+        <div class="input-area">
+          [email* your_email]
+        </div>
+      </div>
+      <div class="input-box">
+        <label class="label-area">お問い合わせ内容</label>
+        <div class="input-area">
+          [textarea* content]
+        </div>
+      </div>
+      <div class="action-box">
+        [submit "上記内容で送信する"]
+      </div>
+    </div>
+    <div class="note">
+      <small>
+        お問い合わせの内容によっては、返信にお時間をいただく場合や、<br />
+        お答えできないことがございますことを予めご了承ください。 
+      </small>
+    </div>
+  </div>
+</div>
+
+
+■サイト管理者へ送信される通知メール
+
+【送信先】
+****@*******（※通知させたいメールアドレス）
+
+【送信元】
+[your_name] <wordpress@pacificmall.local>
+
+【件名】
+フォームからお問い合わせがありました。
+
+【メッセージ本文】
+
+お問い合わせ担当各位
+
+[your_name]様よりお問い合わせを頂きました。
+ご対応をよろしくお願いします。
+
+━━━━━━━━━━━━━━━━━━━━━━━━
+お問い合わせ内容
+━━━━━━━━━━━━━━━━━━━━━━━━
+■お名前：[your_name]([your_kana])
+■メールアドレス：[your_email]
+■お問い合わせ内容：
+[content]
+
+------------ 
+以上
+
+
+■問い合わせした方へ送信される確認メール
+
+【送信先】
+[your_email]
+
+【送信元】
+PACIFIC MALL DEVELOPMENT <wordpress@pacificmall.local>
+
+【件名】
+お問い合わせありがとうございます。
+
+【メッセージ本文】
+
+この度はお問い合わせありがとうございます。
+お問い合わせ内容により、返信にはお時間を頂く場合もありますがご了承ください。
+
+━━━━━━━━━━━━━━━━━━━━━━━━
+以下の内容でメールを受け付けました。
+━━━━━━━━━━━━━━━━━━━━━━━━
+■お名前：[your_name]
+■メールアドレス：[your_email]
+■お問い合わせ内容：
+[content]
+
+----------------------------------------
+　パシフィックモール開発株式会社
+　【お問い合わせ専用ダイヤル】 03-0000-0000　
+※受付時間 9:00～18:00（月～金）
+----------------------------------------
