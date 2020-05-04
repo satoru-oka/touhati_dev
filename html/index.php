@@ -19,8 +19,8 @@
       <div class="header-inner">
         <div class="logo">
           <a class="logo-header" href="/">
-            <img src="./assets/images/common/logo-main.svg" class="main-logo" alt="PACIFIC MALL DEVELOPMENT" />
-            <img src="./assets/images/common/logo-fixed.svg" class="fixed-logo" alt="PACIFIC MALL DEVELOPMENT" />
+            <img src="<?= get_template_directory_uri(); ?>/assets/images/common/logo-main.svg" class="main-logo" alt="PACIFIC MALL DEVELOPMENT" />
+            <img src="<?= get_template_directory_uri(); ?>/assets/images/common/logo-fixed.svg" class="fixed-logo" alt="PACIFIC MALL DEVELOPMENT" />
           </a>
         </div>
         <button class="toggle-menu js-toggoleNav">
@@ -63,7 +63,7 @@
       </div>
     </header>
     <section class="section-contents" id="keyvisual">
-      <img src="./assets/images/bg-section-keyvisual.jpg" alt="MAIN IMAGE" />
+      <img src="<?= get_template_directory_uri(); ?>/assets/images/bg-section-keyvisual.jpg" alt="MAIN IMAGE" />
       <div class="wrapper">
         <h1 class="site-title">Connecting the future.</h1>
         <p class="site-caption">
